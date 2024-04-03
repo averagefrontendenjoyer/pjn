@@ -1,0 +1,26 @@
+graph TD;
+    A[Configuração Inicial no GitHub] --> B[Estrutura Básica do Workflow];
+    B --> C[Definição de Jobs e Steps];
+    C --> D[Execução de Jobs];
+    D --> E[Visualização de Resultados];
+    E --> F[Análise dos Resultados];
+
+    B --> G{Entender Estrutura Básica do Workflow};
+    G -->|Sim| H[Definir Nome, Eventos, Jobs];
+    G -->|Não| G;
+
+    C --> I{Entender Definição de Jobs e Steps};
+    I -->|Sim| J[Configurar Jobs e Steps];
+    I -->|Não| I;
+
+    D --> K{Entender Execução de Jobs};
+    K -->|Sim| L[Executar Jobs];
+    K -->|Não| K;
+
+    E --> M{Entender Visualização de Resultados};
+    M -->|Sim| N[Acessar seção de Actions];
+    M -->|Não| M;
+
+    F --> O{Entender Análise dos Resultados};
+    O -->|Sim| P[Analisar Logs de Execução];
+    O -->|Não| O;
